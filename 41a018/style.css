@@ -1,0 +1,212 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: rgba(233, 230, 232, 0.911);
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    color: rgb(255, 144, 203);
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 90px;
+    background-image: url(image/Logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    text-indent: -9999px;
+}
+
+header ul{
+position: absolute;
+right: 5vw;
+top: 0;
+line-height: 80px;
+}
+
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header a{
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration:underline
+}
+
+
+.section-overview{
+background-color: rgb(44, 44, 44);
+color: rgb(233, 233, 233);
+height: 95vh;
+background-image: url(image/0.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.section-overview h2{
+    font-size: 30px;
+    margin-top: 60px;
+    }
+
+    .section-overview p{
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.section-overview a{
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    border: solid #696969;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.town-lifestyle{
+    background-color: rgb(109, 107, 107);
+  color: azure;
+height: 200px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 15px;
+line-height: 1.8em;
+}
+
+.couture-collection{
+    display:flex;
+}
+
+.couture-collection img{
+    width: 50% ;
+}
+
+.info{
+    width: 50% ;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2{
+    font-size: 27px;
+    margin-bottom: 30;
+}
+
+.info p{
+    text-align: 40px;
+    line-height: 2em;
+}
+
+.memory-records{
+    display:flex;
+    background-color: #ede9db;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px 80px;
+}
+.memory-records div{
+    width: 300px;
+    text-align: center;
+}
+
+.memory-records img{
+    width: 125%;
+    border-radius: 10px;
+}
+.memory-records h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.memory-records p{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+footer{
+background-color: rgb(51, 51, 51);
+color: rgb(255, 255, 255);
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+}
+
+menu{
+    display: none;
+}
+
+/*響應式網頁語法*/
+@media screen and (max-width:768px){
+ header ul{
+     display:none;
+ }  
+ 
+ header h1 {
+     left: 50%;
+     transform: translate(-50%);
+ }
+
+    .section-overview h2{
+        font-size: 40px;
+    }
+
+    .menu{
+        display: block;
+        background-color: darkgrey;
+        color: dimgrey;
+        font-size: 35px;
+position: absolute;
+top: 15px;
+border: none;
+cursor: pointer;
+    }
+
+    .couture-collection{
+        flex-direction: column;
+    }
+    .couture-collection img{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+     padding: 400px 0;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .memory-records{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .memory-records div{
+margin-bottom: 30px;
+    }
+}
